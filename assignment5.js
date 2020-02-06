@@ -152,12 +152,12 @@ function filterThing(allHotels) {
 
         else if (temp === "") {
         } else {
-            $("#hotel" + i).empty();
+            $("#hotel" + i).remove();
             num++;
         }
         // Price range filter
         if (parseFloat(allHotels[i - 1].price) >= document.getElementById("pricerange").value) {
-            $("#hotel" + i).empty();
+            $("#hotel" + i).remove();
             num++;
         }
         // Star select filter
@@ -170,7 +170,7 @@ function filterThing(allHotels) {
         } else if (tempSelect == star) {
 
         } else {
-            $("#hotel" + i).empty();
+            $("#hotel" + i).remove();
             num++;
         }
         // Guest rating filter
@@ -195,7 +195,7 @@ function filterThing(allHotels) {
         } else if (ratingSelect == str) {
 
         } else {
-            $("#hotel" + i).empty();
+            $("#hotel" + i).remove();
             num++;
         }
 
@@ -209,7 +209,7 @@ function filterThing(allHotels) {
         else if (locSelect == city) {
 
         } else {
-            $("#hotel" + i).empty();
+            $("#hotel" + i).remove();
             num++;
         }
 
@@ -233,7 +233,7 @@ function filterThing(allHotels) {
 
         }
         else {
-            $("#hotel" + i).empty();
+            $("#hotel" + i).remove();
             num++;
         }
     }
